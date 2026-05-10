@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for kai from iloilo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating-container"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <h1>loading feelings...</h1>
+</div>
+
+<!-- SPOTIFY -->
+<div class="spotify-player">
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/1lNHWPDvKEbamKezpLq7HW?utm_source=generator"
+width="100%" height="80"
+frameborder="0"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+</div>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <div class="box">
+
+    <h2>for kai</h2>
+    <p>a soft space designed for you</p>
+
+    <p id="typewriter"></p>
+
+    <div class="nav-buttons">
+      <button onclick="nextPage()">next</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <div class="box">
+    <p>there are just too many reasons, honestly.</p>
+    <div class="nav-buttons">
+      <button onclick="backPage()">back</button>
+      <button onclick="nextPage()">next</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <div class="box">
+    <p>but here are some of those many reasons.</p>
+    <div class="nav-buttons">
+      <button onclick="backPage()">back</button>
+      <button onclick="nextPage()">next</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <div class="box">
+    <p>you make ordinary moments feel softer.</p>
+    <div class="nav-buttons">
+      <button onclick="backPage()">back</button>
+      <button onclick="nextPage()">next</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <div class="box">
+    <p>learning you feels like falling slowly in the best way.</p>
+    <div class="nav-buttons">
+      <button onclick="backPage()">back</button>
+      <button onclick="nextPage()">next</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+  <div class="box">
+    <h2>days since we met</h2>
+    <h1 id="daysCounter"></h1>
+    <div class="nav-buttons">
+      <button onclick="backPage()">back</button>
+      <button onclick="nextPage()">next</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+  <div class="box">
+    <h2>secret diary</h2>
+    <input type="password" id="password" placeholder="enter password">
+
+    <div class="nav-buttons">
+      <button onclick="backPage()">back</button>
+      <button onclick="checkPassword()">unlock</button>
+    </div>
+
+    <p id="secretText"></p>
+  </div>
+</div>
+
+<!-- SECRET PAGE -->
+<div class="page" id="secretPage">
+  <div class="diary">
+    <h1>💗</h1>
+    <p id="diaryText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
